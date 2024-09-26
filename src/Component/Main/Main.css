@@ -1,0 +1,20 @@
+@media screen and (min-width:250px) and (max-width:767px) {
+    /* .img{
+        display: none;
+    } */
+     .obj{
+        height: 15%;
+     }
+     .h1{
+        font-size: 2rem;
+     }
+     .btn{
+        align-items: center;
+        padding-left: 20%;
+     }
+     .button1{
+        
+        margin: 5px;
+     }
+     
+}

@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Dashboard from './Component/Dashboard/Dashboard';
+import Main from './Component/Main/Main';
+import Navbar from './Component/Navbar/Navbar';
+import Products from './Component/Products/Products';
+import Testimonial from './Component/Testimonial/Testimonial';
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+// import { Footer } from 'antd/es/layout/layout';
+
+import Footer from './Component/Footer/Footer';
+import LatestPost from './Component/LatestPost/LatestPost';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Main />
+      <Dashboard />
+      <Products />
+      <Testimonial />
+      <LatestPost />
+      <Footer />
     </div>
   );
 }

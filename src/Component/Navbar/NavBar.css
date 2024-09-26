@@ -1,0 +1,50 @@
+/* Custom CSS for the Drawer */
+.custom-drawer .ant-drawer-content {
+    background-color: #f0f0f0; 
+    
+}
+
+/* Optional: Customizing other parts of the Drawer */
+.custom-drawer .ant-drawer-header {
+    background-color: #e0e0e0; /* Change header background color */
+    color: #333; /* Change header text color */
+    
+}
+
+
+.custom-drawer .ant-drawer-body {
+    color: #333; /* Change body text color */
+    
+}
+
+
+/* NavBar.css */
+.drawer-content {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ensure full height of the drawer */
+    overflow: hidden;
+  }
+  
+  .drawer-menu,
+  .drawer-submenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensure it occupies the full height */
+    transition: transform 0.5s ease;
+  }
+  
+  .drawer-submenu {
+    transform: translateX(100%); /* Initially off-screen */
+  }
+  
+  .drawer-open-submenu .drawer-submenu {
+    transform: translateX(0); /* Slide in */
+  }
+  
+  .drawer-open-submenu .drawer-menu {
+    transform: translateX(-100%); /* Slide out */
+  }
+  
