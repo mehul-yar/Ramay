@@ -3,7 +3,15 @@ import React from 'react';
 import { Rate } from 'antd';
 import data from './productsData';
 
+
+
 export default function Products() {
+
+    const goToDemoPage = () => {
+        window.open('/ProductsDetails', '_blank');
+    };
+
+
     return (
         <div className="container mx-auto p-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center">
@@ -23,7 +31,7 @@ export default function Products() {
                         <Rate defaultValue={4} className="mb-4" />
 
                         <div className="flex justify-center space-x-4">
-                            <button className="bg-yellow-600 h-8 w-32 hover:bg-transparent hover:text-yellow-700 
+                            <button onClick={goToDemoPage} className="bg-yellow-600 h-8 w-32 hover:bg-transparent hover:text-yellow-700 
                             border-2 border-yellow-600 shadow-md">Buy Now</button>
                             <button className="hover:bg-yellow-600 h-8 w-32 bg-transparent text-yellow-700 
                             border-2 border-yellow-600 hover:text-white shadow-md">Add To Cart</button>
@@ -34,3 +42,5 @@ export default function Products() {
         </div>
     );
 }
+
+
